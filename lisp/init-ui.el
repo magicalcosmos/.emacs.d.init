@@ -1,4 +1,3 @@
-;;主题
 (use-package gruvbox-theme
   :init(load-theme 'gruvbox-dark-soft t))
 
@@ -7,4 +6,13 @@
   (setq sml/no-confirm-load-theme t
 	sml/theme 'respectful)
   (sml/setup))
+
+
+
+(setq display-line-numbers-type 'relative)
+(unless *is-windows*
+  (global-display-line-numbers-mode t))
+
 (provide 'init-ui)
+
+;;; init-ui.el ends here
